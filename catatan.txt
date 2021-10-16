@@ -1,0 +1,2 @@
+GitHub has made decision to rename their "master" repository into "main"
+https://www.theregister.com/2020/06/15/github_replaces_master_with_main
