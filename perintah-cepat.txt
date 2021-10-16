@@ -76,3 +76,12 @@ $ git clone https://github.com/yourname/yourrepo.git
 
 View and manage connected repo
 $ git remote -v
+
+Connect local repo to (an empty) online repo
+# Create an empty repo first, then add its remote url
+# "origin" can be replaced with another name you want
+$ git remote add origin https://github.com/yourname/yourrepo.git
+# Rename your current master repository to main
+$ git branch -M main
+# Push the local files to github
+$ git push -u origin main
