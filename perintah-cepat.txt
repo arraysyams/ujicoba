@@ -70,3 +70,9 @@ Unmerged paths:
 
 Return to specific commit to restore files (or file state)
 $ git checkout 1234abc
+
+Easiest way to download and connect online repo to local folder: clone
+$ git clone https://github.com/yourname/yourrepo.git
+
+View and manage connected repo
+$ git remote -v
