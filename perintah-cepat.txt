@@ -1,0 +1,72 @@
+Git commands quick fact
+
+Initialize an empty folder (making it compatible with git)
+$ mkdir project_folder
+$ cd project_folder
+$ git init
+
+Pull a repo
+$ git pull https://github.com/yourname/yourrepo
+
+Configure git user
+$ git config user.email "name@mail.com"
+$ git config user.name "Name"
+
+Show uncommitted files (and merge conflicts)
+$ git status
+
+Add files to be committed
+$ git add yourfile
+To add all files
+$ git add .
+
+Restore uncommitted files
+$ git restore --staged yourfile
+
+Commit added files with a message
+$ git commit -m "Your message"
+
+Undo last commit
+$ git reset HEAD~1
+Undo several last commits (for example, 4 last commits)
+$ git reset HEAD~4
+
+Show commits activity
+$ git log
+
+Create a branch
+$ git branch akar
+
+Remove a branch
+$ git branch -d akar
+or (to force remove it)
+$ git branch -D akar
+
+Show branches list
+$ git branch
+
+Switch to a branch
+$ git checkout akar
+
+Direct merge (Fast-forward)
+$ git checkout master
+$ git merge akar
+
+Three-way merge (merge-commit)
+# Same as above, but a commit should be created to do it
+# This is done if fast forward merge isn't possible
+
+See merged branch
+$ git branch --merged
+
+Merge conflicts
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   yourfile.here
+
+Return to specific commit to restore files (or file state)
+$ git checkout 1234abc
