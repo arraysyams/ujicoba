@@ -88,3 +88,4 @@ $ git push -u origin main
 
 Ignores changes in file's permission
 $ git config --local core.filemode false
+# Source: https://stackoverflow.com/questions/5425088/git-diff-reports-local-changes-old-mode-new-mode
