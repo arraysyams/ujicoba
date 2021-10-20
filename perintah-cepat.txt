@@ -85,3 +85,6 @@ $ git remote add origin https://github.com/yourname/yourrepo.git
 $ git branch -M main
 # Push the local files to github
 $ git push -u origin main
+
+Ignores changes in file's permission
+$ git config --local core.filemode false
